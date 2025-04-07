@@ -51,7 +51,7 @@ class Operator:
         self.output_size = est_output_size
         self.max_slots = max_slots
         self.current_slots = 0
-        self.input_queue = deque()  # Queue of (key, value) pairs
+        self.input_queue = deque()  # Queue of Message objects
         self.output_buffer = deque()  # Output buffer
         self.downstream = downstream or []
 
